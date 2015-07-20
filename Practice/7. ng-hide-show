@@ -3,7 +3,7 @@
 $scope.isAdmin = false;
 
 <div>
-	<a href="win">Click here for super powers</a>
+	<a href="win" data-ng-hide="!isAdmin">Click here for super powers</a>
 </div>
 
 *****************************************************
@@ -13,7 +13,7 @@ $scope.isAdmin = false;
 $scope.danceFLoor = [];
 
 <ul>
-	<li ng-repeat="hater in hemanWomanHatersClub">{{member}}</li>
+	<li ng-repeat="hater in hemanWomanHatersClub" data-ng-hide=>{{member}}</li>
 </ul>
 
 ***************************************************** 
